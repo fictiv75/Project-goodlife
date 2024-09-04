@@ -1,0 +1,55 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button,
+.button-outline {
+  display: inline-block;
+  min-width: toRem(237);
+  height: toRem(68);
+  border-radius: toRem(34);
+  background-color: $ac;
+  font-family: inherit;
+  font-size: toRem(16);
+  font-weight: 600;
+  color: #fff;
+  line-height: toRem(68);
+  letter-spacing: toRem(0.75);
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:focus {
+    outline: toRem(9) solid $outBr;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $hoverAc;
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  &--fw {
+    width: 100%;
+  }
+}
+
+.button-outline {
+  line-height: toRem(64);
+  border: toRem(2) solid $ac;
+  background-color: #fff;
+  color: $ac;
+
+  &:focus {
+    outline: toRem(9) solid $outBr;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #fff;
+      color: $hoverAc;
+      border-color: $hoverAc;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.h1,
+.h2,
+.h4 {
+  font-size: toRem(70);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.h2 {
+  font-size: toRem(60);
+}
+
+.h3,
+.h5 {
+  font-size: toRem(48);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.h4 {
+  font-size: toRem(40);
+}
+
+.h5 {
+  font-size: toRem(38);
+}
